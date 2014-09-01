@@ -31,6 +31,38 @@ body footer {
 }
 body footer a {
   color: #ddd;
+  text-decoration: none;
+}
+body footer a p {
+  font-family: 'code_proregular';
+  font-weight: 300;
+  margin-bottom: 2em;
+  position: relative;
+}
+body footer .mail {
+  position: relative;
+}
+body footer .mail:before {
+  color: #d94343;
+  content: '\e75f';
+  font-family: 'icos';
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
+}
+body footer .git {
+  margin: 2em 0;
+  position: relative;
+}
+body footer .git:before {
+  color: #d94343;
+  content: '\e78a';
+  font-family: 'icos';
+  font-size: 2em;
+  text-align: center;
+  text-decoration: none;
+  width: 100%;
 }
 body footer .inner {
   font-size: 12px;
