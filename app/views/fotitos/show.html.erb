@@ -1,0 +1,17 @@
+<main>
+	<section class="internoPost">
+		<p id="notice"><%= notice %></p>
+
+		<p>
+		  <strong>Nombre:</strong>
+		  <%= @fotito.nombre %>
+		</p>
+
+		<p>
+		  <img src="<%= @fotito.imagen %>">
+		</p>
+
+		<%= link_to 'Edit', edit_fotito_path(@fotito) %> |
+		<%= link_to 'Back', fotitos_path %>
+	</section>
+</main>

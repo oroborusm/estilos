@@ -1,0 +1,28 @@
+<main>
+  <section class="internoPost">
+    <div class="contPost">
+      <h1>Mis trabajos</h1>
+      <ul class="post-iterado">
+        <% @posts.each do |post| %>
+          <li data-id="<%= post.id %>">
+            <figure style="background-image:url('<%= post.foto %>');">
+            </figure>
+            <div class="links">
+              <%= link_to "#{post.titulo}", post, :class=>"titulo" %>
+
+              <%= link_to '', post, method: :delete, data: { confirm: 'Are you sure?' }, :class=>"cerrar" %>
+            </div>
+            
+          </li>
+        <% end %>
+      </ul>
+
+      <% if current_admin %>
+        <%= link_to 'Crear nueva entrada', new_post_path, :class=>"botonsillo" %>
+        <%= link_to 'Agregar mas fotos', fotitos_path, :class=>"botonsillo" %>
+      <% end %>
+    </div>
+
+    
+  </section>
+</main>

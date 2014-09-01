@@ -1,0 +1,43 @@
+<main>
+	<section class="internoPost">
+		<p id="notice"><%= notice %></p>
+		<h2><%= @post.titulo %></h2>
+		<article class="post">
+			<figure>
+				<img src="<%= @post.foto %>" alt="">
+			</figure>
+			
+			<p>
+				<%= @post.descripcion %>
+			</p>
+		</article>
+
+		<article class="detalle">
+			<figure>
+				<img src="<%= @post.fotito.imagen %>" alt="">
+			</figure>
+		</article>
+
+		<div class="contPost">
+			<ul>
+				<% if current_admin %>
+					<li>
+						<%= link_to 'Back', posts_path , :class=>"botonsillo" %>	
+					</li>
+					<li>
+						<%= link_to 'Edit', edit_post_path(@post) , :class=>"botonsillo" %>
+					</li>
+				<%else%>
+					<li>
+						<a href="/" class="botonsillo">Volver</a>
+					</li>
+				<%end%>
+			</ul>
+			
+					
+		</div>
+
+
+
+	</section>
+</main>

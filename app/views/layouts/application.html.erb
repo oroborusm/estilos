@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+  <title>Panopticon</title>
+  <meta name="description" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,300' rel='stylesheet' type='text/css'>
+  <%= stylesheet_link_tag 'normalize', 'estilo', media: 'all', 'data-turbolinks-track' => true %>
+
+
+  
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<header>
+      <div class="contenedor">
+        <div class="logo">
+          <figure>
+            <a class="blog-logo" href="/">
+                <img class="wenalogo" src="/assets/logo1.png" alt="">
+            </a>
+          </figure>
+          <h2>Juan Bustamante</h2>
+        </div>
+        
+        
+
+        <nav>
+            <ul>
+                <li><a class="ancla" href=".galeria">Trabajos</a></li>
+                <li><a class="ancla" href=".aboutMe">Sobre mi</a></li>
+                
+                <% if current_admin %>
+                  <li>
+                    <%= link_to 'Salir', destroy_admin_session_path, method: :delete %>
+                  </li>
+                  <li>
+                    <%= link_to 'Nuevo', new_post_path %>
+                  </li>
+                <%else%>
+                  <li>
+                    <%= link_to 'Ingresa', new_admin_session_path %>
+                  </li>
+                <%end%>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+  <%= yield %>
+
+
+  <%= javascript_include_tag 'application','carrusel', 'script', 'data-turbolinks-track' => true %>
+
+  <footer>
+    <div class="imagBackground">
+      <div class="imag"></div>
+      <h2>Contacto</h2>
+    </div>
+  	<a href="mailto:someone@example.com">Por correo</a>
+    <a href="https://github.com/oroborusm">Mi cuenta de git</a>
+
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
+  </footer>
+</body>
+</html>

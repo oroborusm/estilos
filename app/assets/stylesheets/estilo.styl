@@ -1,0 +1,520 @@
+clarito = #EBECEE
+colorao = #D94343
+colorados = #AC6B56
+cafe = #7D5241
+oscuro = #393845
+
+@font-face {
+	font-family: 'icos';
+	src:url('/assets/icos/icomoon.eot?ldq7ra');
+	src:url('/assets/icos/icomoon.eot?#iefixldq7ra') format('embedded-opentype'),
+		url('/assets/icos/icomoon.woff?ldq7ra') format('woff'),
+		url('/assets/icos/icomoon.ttf?ldq7ra') format('truetype'),
+		url('/assets/icos/icomoon.svg?ldq7ra#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+    font-family: 'code_proregular';
+    src: url('/assets/codepro/code_pro-webfont.eot');
+    src: url('/assets/codepro/code_pro-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/codepro/code_pro-webfont.woff') format('woff'),
+         url('/assets/codepro/code_pro-webfont.ttf') format('truetype'),
+         url('/assets/codepro/code_pro-webfont.svg#code_proregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'code_pro_light';
+    src: url('/assets/codepro/code_pro_light-webfont.eot');
+    src: url('/assets/codepro/code_pro_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/assets/codepro/code_pro_light-webfont.woff') format('woff'),
+         url('/assets/codepro/code_pro_light-webfont.ttf') format('truetype'),
+         url('/assets/codepro/code_pro_light-webfont.svg#code_pro_lightregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body
+	background #f5f5f5
+	font-size 18px
+	footer
+		background oscuro
+		color white
+		padding 3rem 0
+		text-align center
+		a
+			color #DDD
+		.inner
+			font-size 12px
+	header
+		//background oscuro
+		height 100px
+		margin 0 auto
+		position fixed
+		top 0
+		transition .5s
+		width 100%
+		z-index 10
+		.contenedor
+			margin 0 auto
+			.logo
+				float left
+				position relative
+				z-index 2
+				h2
+					color oscuro
+					font-family 'code_pro_light'
+					font-size 1em
+					line-height 100px
+					margin 0
+				figure
+				h2
+					display inline-block
+					vertical-align top
+				figure
+					//background clarito
+					margin 0
+					width 97px
+					.wenalogo
+						margin 20% 10% 20% 30%
+						opacity 0
+						width 60%
+			nav
+				float right
+				margin 0 auto
+				z-index 3
+				ul
+					float right
+					margin 0
+					padding 0
+					li
+						display inline-block
+						margin-right 1em
+						a
+							color oscuro
+							line-height 100px
+							font-family 'code_pro_light'
+							font-weight 700
+	.fijo
+		display block
+		height 390px
+		//margin-top 100px
+		opacity 1
+		position relative
+		width 100%
+		z-index 1
+		.bio
+			margin-top 3.4em
+			position fixed
+			text-align center
+			width 100%
+			.slide
+				position relative
+				li
+					height 3em
+					figure
+						margin 0
+						padding 0
+						position relative
+						width 100%
+						img
+							width 180px
+						figcaption
+							width 100%
+							p
+								color oscuro
+								font-family 'code_proregular'
+		.fijoImg
+			background-attachment fixed
+			background-image url('../assets/background2.jpg')
+			background-position top center
+			background-size cover
+			display block
+			height 100%
+			width 100%
+	main
+		background #f5f5f5
+		padding 2em 0
+		position relative
+		z-index 1
+		section
+			margin 0 auto
+			width 80%
+			.tools
+				text-align center
+				ul
+				.dis
+					margin 0
+					padding 0
+					li
+						display inline-block
+						figure
+							margin 0
+							padding 0
+							img
+								filter grayscale(1)
+								opacity .5
+								transition .7s
+								-webkit-filter grayscale(1)
+								width 100px
+								&:hover
+									filter grayscale(0)
+									opacity 1
+									-webkit-filter grayscale(0)
+				.dis
+					margin-bottom 2em
+					li
+						figure
+							img
+								width 60px	
+		.aboutMe
+			margin 0
+			//padding 2em 0
+			width 100%
+			.imagBackground
+				h2
+					color oscuro
+			.about
+				background colorao
+				overflow hidden
+				.inacap
+					//background colorao
+					text-align right
+				.inacap
+				.laboral
+					//display inline-block
+					float left
+					font-family 'open sans'
+					margin 0
+					padding 2em 0 1em
+					position relative
+					vertical-align top
+					width 50%
+					.cont
+						width 80%
+						z-index 10
+						h3
+							color clarito
+							font-weight 300
+							//font-size 1rem
+						ul
+							margin 0
+							padding 0
+							li
+								color clarito
+								font-size .9em
+								list-style none
+								margin 0
+								padding 0
+
+					p
+						color clarito
+						font-style italic
+						font-size .8em
+				.laboral
+					background oscuro
+					&:before
+						border-bottom 220px solid oscuro
+						border-left 70px solid colorao
+						border-right 70px solid oscuro
+						border-top 220px solid colorao
+						content ''
+						position absolute
+						top 0
+						left -70px
+					.cont
+						margin-left 20%
+
+		.contPag
+			font-family 'code_pro_light'
+			font-size 16px
+			text-align center
+			margin-top 3em
+		.galeria
+			background oscuro
+			margin-top 2em
+			width 100%
+			.contPost
+				.post-iterado
+					li
+						a
+							background rgba(colorao, .8)
+							bottom 0
+							color white
+							font-size 16px
+							height 100%
+							line-height 100%
+							opacity 0
+							padding 45% 0 0 0
+							position absolute
+							text-align center
+							top 0
+							transition .5s ease-out
+							width 100%
+							&:hover
+								opacity 1
+			.imagBackground
+				h2
+					color clarito
+		.galeria
+		.internoPost
+			font-family 'code_pro_light'
+			font-weight 600			
+			.contPost
+				margin 0 auto
+				padding 1rem 0
+				max-width 920px
+				h1
+					color colorao
+					text-align center
+				.post-iterado
+					display block
+					font-size 0
+					padding 0
+					li
+						display inline-block
+						font-size 0
+						margin 0
+						overflow hidden
+						padding 0
+						position relative
+						vertical-align top
+						figure
+							background-position right top
+							background-repeat no-repeat
+							background-size cover
+							height 230px
+							margin 0
+							padding 0
+							position relative
+							width 230px
+
+								
+		.internoPost
+			margin-top 10em
+			max-width 920px
+			form
+				text-align left
+				width 100%
+				input
+					width 100%
+				textarea
+					width 100%
+			h2
+			p
+				color colorao
+				text-align center
+			.contPost
+				text-align center
+				ul
+					li
+						display inline-block
+						position relative
+						figure
+							position relative
+						.links
+							background rgba(colorao, .8)
+							bottom 0
+							color green
+							font-size 14px
+							height 100%
+							opacity 0
+							overflow hidden
+							padding 0
+							position absolute
+							text-align center
+							top 0
+							width 100%
+							&:hover
+								opacity 1
+							.cerrar
+								border-radius 50%
+								color oscuro
+								height 25px
+								line-height 25px
+								position absolute
+								right 1em
+								text-decoration none
+								top 1em
+								width 25px
+								z-index 10
+								&:before
+									content "\e6fd"
+									font-family "icos"
+							.titulo
+								color white
+								height 100%
+								left 0
+								line-height 100%
+								padding 45% 0 0 0 
+								position absolute
+								width 100%
+				.botonsillo
+					background colorao
+					border-radius .3em
+					color white
+					display inline-block
+					margin-top 3em
+					padding 1em 2em
+					text-align center
+					transition .4s
+					width 200px
+					&:hover
+						background oscuro
+			.detalle
+				figure 
+					margin 2em 0
+					padding 0
+					width 100%
+					img
+						width 100%
+			.post
+				figure
+					margin 0
+					padding 0
+					width 40%
+					img
+						width 100%
+				figure
+				p
+					display inline-block
+					vertical-align top
+				p
+					color oscuro
+					margin 0 0 0 4%
+					text-align left
+					width 55%
+			.postGal
+				margin 0 auto
+				padding 0
+				position relative
+				width 50%
+				&:hover
+					.botones
+						opacity 1
+				img
+					width 100%
+				.botones
+					opacity 0
+					position absolute
+					transition .3s
+					width 100%
+					.back
+						left 1em
+						position absolute
+						text-decoration none
+						top 1em
+						&:before
+							color colorao
+							content "\e666"
+							font-family "icos"
+					.edit
+						position absolute
+						right 1em
+						text-decoration none
+						top 1em
+						&:before
+							color colorao
+							content "\e647"
+							font-family "icos"
+
+
+
+
+
+.backgroundOscuro
+	background rgba( clarito, .7)			
+.buttom
+	margin-top 1em
+	position relative
+	text-align center
+	button
+		background colorao
+		position absolute
+		top 0
+		z-index -1
+	.desaparece
+		top 0
+		opacity 0
+		position absolute
+
+.bx-wrapper
+	height 240px
+.bx-start.active
+.bx-pager-link.active
+	background #EEE
+	border 2px solid white
+.bx-pager-link
+	border 2px solid white
+	border-radius 50%
+	bottom 0
+	display inline-block
+	height .5rem
+	position absolute
+	text-indent -9999px
+	vertical-align middle
+	width .5rem
+.bx-pager-item
+	display inline-block
+	margin 0 .4em 0 0
+	&:nth-child(even)
+		margin 0 0 0 .4em
+.bx-prev
+.bx-next
+	display none
+.enviar
+	margin-top 1em
+	text-align center
+	input[type=submit]
+		background colorao
+		border none
+		border-radius .5em
+		color white
+		padding 1em 2em
+		width 50%
+.imagBackground
+	height 100px
+	position relative
+	width 100%
+	h2
+		font-family 'code_pro_light'
+		margin 0
+		padding 1em 0
+		position absolute
+		text-align center
+		width 100%
+	.imag
+		background-image url('../assets/logo1.png')
+		background-position center center
+		background-repeat no-repeat
+		background-size 70px
+		height 100px
+		opacity .3
+		position absolute
+		width 100%
+
+
+@media (max-width 1200px)
+	body
+		.fijo
+			height 310
+
+@media (max-width 600px)
+	body
+		main
+			section
+				width 90%
+				.tools
+					ul
+						li
+							figure
+								img
+									width 70px

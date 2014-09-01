@@ -1,0 +1,157 @@
+   <div class="fijo">
+	    <div class="bio">
+	      <ul class="slide">
+	        <li>
+	          <figure>
+	            <img src="/assets/diseno.png" alt="">
+	            <figcaption>
+	              <p>Diseñador Gráfico de pasión y profesión de día…</p>
+	            </figcaption>
+	          </figure>
+	          
+	        </li>
+
+	        <li>
+	          <figure>
+	            <img src="/assets/codigo.png" alt="">
+	            <figcaption>
+	              <p>Front-end developer, por las noches …</p>
+	            </figcaption>
+	          </figure>
+	        </li>
+	      </ul>
+	    </div>
+
+	    <div class="fijoImg"></div>
+	</div>
+	
+	<main>
+		
+		<section>
+	        <article class="tools">
+	          <ul class="dis">
+	              <li >
+	                  <figure>
+	                      <img src="assets/ai.png" alt="">
+	                      <figcaption></figcaption>
+	                  </figure>
+	              </li>
+	              <li >
+	                  <figure>
+	                      <img src="assets/ps.png" alt="">
+	                      <figcaption></figcaption>
+	                  </figure>
+	              </li>
+	              <li >
+	                  <figure>
+	                      <img src="assets/id.png" alt="">
+	                      <figcaption></figcaption>
+	                  </figure>
+	              </li>
+	          </ul>
+
+	          <ul>
+	            <li>
+	                <figure>
+	                    <img src="assets/html.png" alt="">
+	                    <figcaption></figcaption>
+	                </figure>
+	            </li>
+	            <li>
+	                <figure>
+	                    <img src="assets/rails.png" alt="">
+	                    <figcaption></figcaption>
+	                </figure>
+	            </li>
+	            <li>
+	                <figure>
+	                    <img src="assets/css.png" alt="">
+	                    <figcaption></figcaption>
+	                </figure>
+	            </li>
+	            <li>
+	                <figure>
+	                    <img src="assets/js.png" alt="">
+	                    <figcaption></figcaption>
+	                </figure>
+	            </li>
+	            <li>
+	                <figure>
+	                    <img src="assets/sublime.png" alt="">
+	                    <figcaption></figcaption>
+	                </figure>
+	            </li>
+	            <li>
+	                <figure>
+	                    <img src="assets/styl.png" alt="">
+	                    <figcaption></figcaption>
+	                </figure>
+	            </li>
+	          </ul>
+	        </article>
+	        
+	    </section>
+
+
+
+		<section class="galeria">
+			<div class="imagBackground">
+				<div class="imag"></div>
+				<h2>Trabajos</h2>
+			</div>
+			
+			<div class="contPost">
+				<ul class="post-iterado">
+					<% @posts.each do |post| %>
+						<li data-id="<%= post.id %>">
+							<figure style="background-image:url('<%= post.foto %>');">
+							</figure>
+							
+							<%= link_to "#{post.titulo}", post %>
+							
+						</li>
+					<% end %>
+				</ul>
+			</div>
+		</section>
+		
+		<section class="aboutMe">
+			<div class="imagBackground">
+				<div class="imag"></div>
+				<h2>Sobre mí</h2>
+			</div>
+			<div class="about">
+				<article class="inacap">
+					<div class="cont">
+						<h3>Inacap Valparaíso, Diseño Gráfico.</h3>
+						<ul>
+							<li>Ganador competencia Profusión.</li>
+							<li>Finalista concurso de etiquetas cerveza artesanal Cranbell (ahora llamada BAC).</li>
+							<li>Seminario de tecnologías para el diseño gráfico organizado por Inacap Valpo y Global Mac. </li>
+						</ul>
+						<p>Entre 2008 y 2010 alumno talleres de jornadas internacionales, Profesores: Santiago Pujol (Cuba), Julián Naranjo (Chile), Germán Montalvo (México).</p>
+					</div>
+				</article>
+
+				<article class="laboral">
+					<div class="cont">
+						<h3>Laboral / Diseño web.</h3>
+						<ul>
+							<li>Diseñador gráfico en Officenter Viña del Mar (2011-2012).</li>
+							<li>Diseñador gráfico en Partner Chile (2012-2013).</li>
+							<li>Diseñador gráfico en Worket (start-up 2013). </li>
+							<li>Capacitaciones varias en cursos online y presenciales. (Diseño y programación multimedia).</li>
+						</ul>
+						<p>"En este minuto me encuentro trabajando de forma freelance, en algunos proyectos de desarrollo web, desde el diseño de interfaces, hasta maquetación."</p>
+					</div>
+				</article>
+			</div>
+			
+
+		</section>
+	</main>
+
+
+
+
+

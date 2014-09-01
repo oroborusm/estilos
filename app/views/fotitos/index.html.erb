@@ -1,0 +1,32 @@
+<main>
+  <section class="internoPost">
+    <div class="contPost">
+      <h1>Listing fotitos</h1>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Imagen</th>
+            <th colspan="3"></th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <% @fotitos.each do |fotito| %>
+            <tr>
+              <td><%= fotito.nombre %></td>
+              <td><%= fotito.imagen %></td>
+              <td><%= link_to 'Show', fotito %></td>
+              <td><%= link_to 'Edit', edit_fotito_path(fotito) %></td>
+              <td><%= link_to 'Destroy', fotito, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+
+      <br>
+      <%= link_to 'Agregar mas fotos', new_fotito_path, :class=>"botonsillo" %>
+    </div>
+  </section>
+</main>

@@ -1,0 +1,580 @@
+@font-face {
+  font-family: 'icos';
+  src: url("/assets/icos/icomoon.eot?ldq7ra");
+  src: url("/assets/icos/icomoon.eot?#iefixldq7ra") format('embedded-opentype'), url("/assets/icos/icomoon.woff?ldq7ra") format('woff'), url("/assets/icos/icomoon.ttf?ldq7ra") format('truetype'), url("/assets/icos/icomoon.svg?ldq7ra#icomoon") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'code_proregular';
+  src: url("/assets/codepro/code_pro-webfont.eot");
+  src: url("/assets/codepro/code_pro-webfont.eot?#iefix") format('embedded-opentype'), url("/assets/codepro/code_pro-webfont.woff") format('woff'), url("/assets/codepro/code_pro-webfont.ttf") format('truetype'), url("/assets/codepro/code_pro-webfont.svg#code_proregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'code_pro_light';
+  src: url("/assets/codepro/code_pro_light-webfont.eot");
+  src: url("/assets/codepro/code_pro_light-webfont.eot?#iefix") format('embedded-opentype'), url("/assets/codepro/code_pro_light-webfont.woff") format('woff'), url("/assets/codepro/code_pro_light-webfont.ttf") format('truetype'), url("/assets/codepro/code_pro_light-webfont.svg#code_pro_lightregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  background: #f5f5f5;
+  font-size: 18px;
+}
+body footer {
+  background: #393845;
+  color: #fff;
+  padding: 3rem 0;
+  text-align: center;
+}
+body footer a {
+  color: #ddd;
+}
+body footer .inner {
+  font-size: 12px;
+}
+body header {
+  height: 100px;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  transition: 0.5s;
+  width: 100%;
+  z-index: 10;
+}
+body header .contenedor {
+  margin: 0 auto;
+}
+body header .contenedor .logo {
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+body header .contenedor .logo h2 {
+  color: #393845;
+  font-family: 'code_pro_light';
+  font-size: 1em;
+  line-height: 100px;
+  margin: 0;
+}
+body header .contenedor .logo figure,
+body header .contenedor .logo h2 {
+  display: inline-block;
+  vertical-align: top;
+}
+body header .contenedor .logo figure {
+  margin: 0;
+  width: 97px;
+}
+body header .contenedor .logo figure .wenalogo {
+  margin: 20% 10% 20% 30%;
+  opacity: 0;
+  width: 60%;
+}
+body header .contenedor nav {
+  float: right;
+  margin: 0 auto;
+  z-index: 3;
+}
+body header .contenedor nav ul {
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+body header .contenedor nav ul li {
+  display: inline-block;
+  margin-right: 1em;
+}
+body header .contenedor nav ul li a {
+  color: #393845;
+  line-height: 100px;
+  font-family: 'code_pro_light';
+  font-weight: 700;
+}
+body .fijo {
+  display: block;
+  height: 390px;
+  opacity: 1;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+body .fijo .bio {
+  margin-top: 3.4em;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+}
+body .fijo .bio .slide {
+  position: relative;
+}
+body .fijo .bio .slide li {
+  height: 3em;
+}
+body .fijo .bio .slide li figure {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+body .fijo .bio .slide li figure img {
+  width: 180px;
+}
+body .fijo .bio .slide li figure figcaption {
+  width: 100%;
+}
+body .fijo .bio .slide li figure figcaption p {
+  color: #393845;
+  font-family: 'code_proregular';
+}
+body .fijo .fijoImg {
+  background-attachment: fixed;
+  background-image: url("../assets/background2.jpg");
+  background-position: top center;
+  background-size: cover;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+body main {
+  background: #f5f5f5;
+  padding: 2em 0;
+  position: relative;
+  z-index: 1;
+}
+body main section {
+  margin: 0 auto;
+  width: 80%;
+}
+body main section .tools {
+  text-align: center;
+}
+body main section .tools ul,
+body main section .tools .dis {
+  margin: 0;
+  padding: 0;
+}
+body main section .tools ul li,
+body main section .tools .dis li {
+  display: inline-block;
+}
+body main section .tools ul li figure,
+body main section .tools .dis li figure {
+  margin: 0;
+  padding: 0;
+}
+body main section .tools ul li figure img,
+body main section .tools .dis li figure img {
+  filter: grayscale(1);
+  opacity: 0.5;
+  transition: 0.7s;
+  -webkit-filter: grayscale(1);
+  width: 100px;
+}
+body main section .tools ul li figure img:hover,
+body main section .tools .dis li figure img:hover {
+  filter: grayscale(0);
+  opacity: 1;
+  -webkit-filter: grayscale(0);
+}
+body main section .tools .dis {
+  margin-bottom: 2em;
+}
+body main section .tools .dis li figure img {
+  width: 60px;
+}
+body main .aboutMe {
+  margin: 0;
+  width: 100%;
+}
+body main .aboutMe .imagBackground h2 {
+  color: #393845;
+}
+body main .aboutMe .about {
+  background: #d94343;
+  overflow: hidden;
+}
+body main .aboutMe .about .inacap {
+  text-align: right;
+}
+body main .aboutMe .about .inacap,
+body main .aboutMe .about .laboral {
+  float: left;
+  font-family: 'open sans';
+  margin: 0;
+  padding: 2em 0 1em;
+  position: relative;
+  vertical-align: top;
+  width: 50%;
+}
+body main .aboutMe .about .inacap .cont,
+body main .aboutMe .about .laboral .cont {
+  width: 80%;
+  z-index: 10;
+}
+body main .aboutMe .about .inacap .cont h3,
+body main .aboutMe .about .laboral .cont h3 {
+  color: #ebecee;
+  font-weight: 300;
+}
+body main .aboutMe .about .inacap .cont ul,
+body main .aboutMe .about .laboral .cont ul {
+  margin: 0;
+  padding: 0;
+}
+body main .aboutMe .about .inacap .cont ul li,
+body main .aboutMe .about .laboral .cont ul li {
+  color: #ebecee;
+  font-size: 0.9em;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+body main .aboutMe .about .inacap p,
+body main .aboutMe .about .laboral p {
+  color: #ebecee;
+  font-style: italic;
+  font-size: 0.8em;
+}
+body main .aboutMe .about .laboral {
+  background: #393845;
+}
+body main .aboutMe .about .laboral:before {
+  border-bottom: 220px solid #393845;
+  border-left: 70px solid #d94343;
+  border-right: 70px solid #393845;
+  border-top: 220px solid #d94343;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -70px;
+}
+body main .aboutMe .about .laboral .cont {
+  margin-left: 20%;
+}
+body main .contPag {
+  font-family: 'code_pro_light';
+  font-size: 16px;
+  text-align: center;
+  margin-top: 3em;
+}
+body main .galeria {
+  background: #393845;
+  margin-top: 2em;
+  width: 100%;
+}
+body main .galeria .contPost .post-iterado li a {
+  background: rgba(217,67,67,0.8);
+  bottom: 0;
+  color: #fff;
+  font-size: 16px;
+  height: 100%;
+  line-height: 100%;
+  opacity: 0;
+  padding: 45% 0 0 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  transition: 0.5s ease-out;
+  width: 100%;
+}
+body main .galeria .contPost .post-iterado li a:hover {
+  opacity: 1;
+}
+body main .galeria .imagBackground h2 {
+  color: #ebecee;
+}
+body main .galeria,
+body main .internoPost {
+  font-family: 'code_pro_light';
+  font-weight: 600;
+}
+body main .galeria .contPost,
+body main .internoPost .contPost {
+  margin: 0 auto;
+  padding: 1rem 0;
+  max-width: 920px;
+}
+body main .galeria .contPost h1,
+body main .internoPost .contPost h1 {
+  color: #d94343;
+  text-align: center;
+}
+body main .galeria .contPost .post-iterado,
+body main .internoPost .contPost .post-iterado {
+  display: block;
+  font-size: 0;
+  padding: 0;
+}
+body main .galeria .contPost .post-iterado li,
+body main .internoPost .contPost .post-iterado li {
+  display: inline-block;
+  font-size: 0;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  vertical-align: top;
+}
+body main .galeria .contPost .post-iterado li figure,
+body main .internoPost .contPost .post-iterado li figure {
+  background-position: right top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 230px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  width: 230px;
+}
+body main .internoPost {
+  margin-top: 10em;
+  max-width: 920px;
+}
+body main .internoPost form {
+  text-align: left;
+  width: 100%;
+}
+body main .internoPost form input {
+  width: 100%;
+}
+body main .internoPost form textarea {
+  width: 100%;
+}
+body main .internoPost h2,
+body main .internoPost p {
+  color: #d94343;
+  text-align: center;
+}
+body main .internoPost .contPost {
+  text-align: center;
+}
+body main .internoPost .contPost ul li {
+  display: inline-block;
+  position: relative;
+}
+body main .internoPost .contPost ul li figure {
+  position: relative;
+}
+body main .internoPost .contPost ul li .links {
+  background: rgba(217,67,67,0.8);
+  bottom: 0;
+  color: #008000;
+  font-size: 14px;
+  height: 100%;
+  opacity: 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  width: 100%;
+}
+body main .internoPost .contPost ul li .links:hover {
+  opacity: 1;
+}
+body main .internoPost .contPost ul li .links .cerrar {
+  border-radius: 50%;
+  color: #393845;
+  height: 25px;
+  line-height: 25px;
+  position: absolute;
+  right: 1em;
+  text-decoration: none;
+  top: 1em;
+  width: 25px;
+  z-index: 10;
+}
+body main .internoPost .contPost ul li .links .cerrar:before {
+  content: "\e6fd";
+  font-family: "icos";
+}
+body main .internoPost .contPost ul li .links .titulo {
+  color: #fff;
+  height: 100%;
+  left: 0;
+  line-height: 100%;
+  padding: 45% 0 0 0;
+  position: absolute;
+  width: 100%;
+}
+body main .internoPost .contPost .botonsillo {
+  background: #d94343;
+  border-radius: 0.3em;
+  color: #fff;
+  display: inline-block;
+  margin-top: 3em;
+  padding: 1em 2em;
+  text-align: center;
+  transition: 0.4s;
+  width: 200px;
+}
+body main .internoPost .contPost .botonsillo:hover {
+  background: #393845;
+}
+body main .internoPost .detalle figure {
+  margin: 2em 0;
+  padding: 0;
+  width: 100%;
+}
+body main .internoPost .detalle figure img {
+  width: 100%;
+}
+body main .internoPost .post figure {
+  margin: 0;
+  padding: 0;
+  width: 40%;
+}
+body main .internoPost .post figure img {
+  width: 100%;
+}
+body main .internoPost .post figure,
+body main .internoPost .post p {
+  display: inline-block;
+  vertical-align: top;
+}
+body main .internoPost .post p {
+  color: #393845;
+  margin: 0 0 0 4%;
+  text-align: left;
+  width: 55%;
+}
+body main .internoPost .postGal {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  width: 50%;
+}
+body main .internoPost .postGal:hover .botones {
+  opacity: 1;
+}
+body main .internoPost .postGal img {
+  width: 100%;
+}
+body main .internoPost .postGal .botones {
+  opacity: 0;
+  position: absolute;
+  transition: 0.3s;
+  width: 100%;
+}
+body main .internoPost .postGal .botones .back {
+  left: 1em;
+  position: absolute;
+  text-decoration: none;
+  top: 1em;
+}
+body main .internoPost .postGal .botones .back:before {
+  color: #d94343;
+  content: "\e666";
+  font-family: "icos";
+}
+body main .internoPost .postGal .botones .edit {
+  position: absolute;
+  right: 1em;
+  text-decoration: none;
+  top: 1em;
+}
+body main .internoPost .postGal .botones .edit:before {
+  color: #d94343;
+  content: "\e647";
+  font-family: "icos";
+}
+.backgroundOscuro {
+  background: rgba(235,236,238,0.7);
+}
+.buttom {
+  margin-top: 1em;
+  position: relative;
+  text-align: center;
+}
+.buttom button {
+  background: #d94343;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.buttom .desaparece {
+  top: 0;
+  opacity: 0;
+  position: absolute;
+}
+.bx-wrapper {
+  height: 240px;
+}
+.bx-start.active,
+.bx-pager-link.active {
+  background: #eee;
+  border: 2px solid #fff;
+}
+.bx-pager-link {
+  border: 2px solid #fff;
+  border-radius: 50%;
+  bottom: 0;
+  display: inline-block;
+  height: 0.5rem;
+  position: absolute;
+  text-indent: -9999px;
+  vertical-align: middle;
+  width: 0.5rem;
+}
+.bx-pager-item {
+  display: inline-block;
+  margin: 0 0.4em 0 0;
+}
+.bx-pager-item:nth-child(even) {
+  margin: 0 0 0 0.4em;
+}
+.bx-prev,
+.bx-next {
+  display: none;
+}
+.enviar {
+  margin-top: 1em;
+  text-align: center;
+}
+.enviar input[type=submit] {
+  background: #d94343;
+  border: none;
+  border-radius: 0.5em;
+  color: #fff;
+  padding: 1em 2em;
+  width: 50%;
+}
+.imagBackground {
+  height: 100px;
+  position: relative;
+  width: 100%;
+}
+.imagBackground h2 {
+  font-family: 'code_pro_light';
+  margin: 0;
+  padding: 1em 0;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+.imagBackground .imag {
+  background-image: url("../assets/logo1.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 70px;
+  height: 100px;
+  opacity: 0.3;
+  position: absolute;
+  width: 100%;
+}
+@media (max-width: 1200px) {
+  body .fijo {
+    height: 310;
+  }
+}
+@media (max-width: 600px) {
+  body main section {
+    width: 90%;
+  }
+  body main section .tools ul li figure img {
+    width: 70px;
+  }
+}
